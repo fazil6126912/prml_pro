@@ -117,11 +117,11 @@ if model_selected == "Model 1(BAG OF WORDS)":
                     st.markdown(image_html, unsafe_allow_html=True)
                     st.text(recommended_movie_names[i])
         
-    if st.button('Generate Report'):
-        html_file_path = "https://fazil6126912.github.io/Bag/"
-        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+    st.text("Report")
+    html_file_path = "https://fazil6126912.github.io/Bag/"
+    link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
     # Write the HTML code to the Streamlit app
-        st.write(link_code, unsafe_allow_html=True)
+    st.write(link_code, unsafe_allow_html=True)
 
 if model_selected == "Model 2(NAIVE BAYES)":
     option = st.selectbox("Type or select an user ID from the dropdown",first_element_knn(movies_knn))
@@ -135,11 +135,11 @@ if model_selected == "Model 2(NAIVE BAYES)":
                     st.markdown(image_html, unsafe_allow_html=True)
                     st.text(recommended_movie_names[i])
 
-    if st.button(f'Generate Report ({model_selected})'):
-        html_file_path = "https://fazil6126912.github.io/NB/"
-        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+    st.text("Report")
+    html_file_path = "https://fazil6126912.github.io/NB/"
+    link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
     # Write the HTML code to the Streamlit app
-        st.write(link_code, unsafe_allow_html=True)
+    st.write(link_code, unsafe_allow_html=True)
 
         
 if model_selected == "Model 3(SVM)":
@@ -154,11 +154,11 @@ if model_selected == "Model 3(SVM)":
                     st.markdown(image_html, unsafe_allow_html=True)
                     st.text(recommended_movie_names[i])
 
-    if st.button(f'Generate Report ({model_selected})'):
-        html_file_path = "https://fazil6126912.github.io/SVM/"
-        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+   st.text("Report")
+    html_file_path = "https://fazil6126912.github.io/SVM/"
+    link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
     # Write the HTML code to the Streamlit app
-        st.write(link_code, unsafe_allow_html=True)
+    st.write(link_code, unsafe_allow_html=True)
 
 if model_selected == "Model 4(RANDOM FOREST)":
     option = st.selectbox("Type or select an user ID from the dropdown",first_element_knn(movies_knn))
@@ -172,11 +172,11 @@ if model_selected == "Model 4(RANDOM FOREST)":
                     st.markdown(image_html, unsafe_allow_html=True)
                     st.text(recommended_movie_names[i])
 
-    if st.button(f'Generate Report ({model_selected})'):
-        html_file_path = "https://fazil6126912.github.io/RF/"
-        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+   st.text("Report")
+    html_file_path = "https://fazil6126912.github.io/RF/"
+    link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
     # Write the HTML code to the Streamlit app
-        st.write(link_code, unsafe_allow_html=True)
+    st.write(link_code, unsafe_allow_html=True)
 
 if model_selected == "Model 5(LINEAR REGRESSION)":
     option = st.selectbox("Type or select an user ID from the dropdown",first_element_knn(movies_knn))
@@ -190,11 +190,11 @@ if model_selected == "Model 5(LINEAR REGRESSION)":
                     st.markdown(image_html, unsafe_allow_html=True)
                     st.text(recommended_movie_names[i])
 
-    if st.button(f'Generate Report ({model_selected})'):
-        html_file_path = "https://fazil6126912.github.io/Lin/"
-        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+    st.text("Report")
+    html_file_path = "https://fazil6126912.github.io/Lin/"
+    link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
     # Write the HTML code to the Streamlit app
-        st.write(link_code, unsafe_allow_html=True)
+    st.write(link_code, unsafe_allow_html=True)
 
 if model_selected == None:
     pass
@@ -214,8 +214,8 @@ if model_selected1 == "Model 6(KNN)":
                     image_html = f'<a href="{"https://www.themoviedb.org/movie/"+str(tmdbId_list[i])}" target="_blank"><img src="{recommended_movie_posters[i]}" style="max-width:250px;"></a>'
                     st.markdown(image_html, unsafe_allow_html=True)
                     st.text(recommended_movie_names[i])
-    if st.button(f'Generate Report ({model_selected1})'):
-        html_file_path = "https://fazil6126912.github.io/KNN/"
-        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+    st.text("Report")
+    html_file_path = "https://fazil6126912.github.io/KNN/"
+    ink_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
     # Write the HTML code to the Streamlit app
-        st.write(link_code, unsafe_allow_html=True)
+    st.write(link_code, unsafe_allow_html=True)
