@@ -172,7 +172,7 @@ if model_selected == "Model 4(RANDOM FOREST)":
                     st.markdown(image_html, unsafe_allow_html=True)
                     st.text(recommended_movie_names[i])
 
-   st.text("Report")
+    st.text("Report")
     html_file_path = "https://fazil6126912.github.io/RF/"
     link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
     # Write the HTML code to the Streamlit app
