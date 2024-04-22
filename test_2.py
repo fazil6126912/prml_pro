@@ -137,9 +137,9 @@ if model_selected == "Model 2(NAIVE BAYES)":
 
     if st.button(f'Generate Report ({model_selected})'):
         html_file_path = "https://fazil6126912.github.io/NB/"
-        html_link_code = f'<a href="{html_file_path}" target="_blank" rel="noopener noreferrer" style="display:none;">Open Web Page</a>'
+        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
     # Write the HTML code to the Streamlit app
-        st.components.v1.html(html_link_code)
+        st.write(link_code, unsafe_allow_html=True)
 
         
 if model_selected == "Model 3(SVM)":
