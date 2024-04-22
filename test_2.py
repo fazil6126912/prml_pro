@@ -140,7 +140,8 @@ if model_selected == "Model 2(NAIVE BAYES)":
         # "https://fazil6126912.github.io/NB/index.html"
 
     # Open HTML file in the default web browser
-        webbrowser.open(html_file_path)
+        # webbrowser.open(html_file_path)
+        st.components.v1.iframe(html_file_path, height=600)
 
 if model_selected == "Model 3(SVM)":
     option = st.selectbox("Type or select an user ID from the dropdown",first_element_knn(movies_knn))
