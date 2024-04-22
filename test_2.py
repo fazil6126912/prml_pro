@@ -119,9 +119,9 @@ if model_selected == "Model 1(BAG OF WORDS)":
         
     if st.button('Generate Report'):
         html_file_path = "https://fazil6126912.github.io/Bag/"
-
-    # Open HTML file in the default web browser
-        webbrowser.open(html_file_path)
+        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+    # Write the HTML code to the Streamlit app
+        st.write(link_code, unsafe_allow_html=True)
 
 if model_selected == "Model 2(NAIVE BAYES)":
     option = st.selectbox("Type or select an user ID from the dropdown",first_element_knn(movies_knn))
@@ -156,9 +156,9 @@ if model_selected == "Model 3(SVM)":
 
     if st.button(f'Generate Report ({model_selected})'):
         html_file_path = "https://fazil6126912.github.io/SVM/"
-
-    # Open HTML file in the default web browser
-        webbrowser.open(html_file_path)
+        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+    # Write the HTML code to the Streamlit app
+        st.write(link_code, unsafe_allow_html=True)
 
 if model_selected == "Model 4(RANDOM FOREST)":
     option = st.selectbox("Type or select an user ID from the dropdown",first_element_knn(movies_knn))
@@ -174,9 +174,9 @@ if model_selected == "Model 4(RANDOM FOREST)":
 
     if st.button(f'Generate Report ({model_selected})'):
         html_file_path = "https://fazil6126912.github.io/RF/"
-
-    # Open HTML file in the default web browser
-        webbrowser.open(html_file_path)
+        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+    # Write the HTML code to the Streamlit app
+        st.write(link_code, unsafe_allow_html=True)
 
 if model_selected == "Model 5(LINEAR REGRESSION)":
     option = st.selectbox("Type or select an user ID from the dropdown",first_element_knn(movies_knn))
@@ -192,9 +192,9 @@ if model_selected == "Model 5(LINEAR REGRESSION)":
 
     if st.button(f'Generate Report ({model_selected})'):
         html_file_path = "https://fazil6126912.github.io/Lin/"
-
-    # Open HTML file in the default web browser
-        webbrowser.open(html_file_path)
+        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+    # Write the HTML code to the Streamlit app
+        st.write(link_code, unsafe_allow_html=True)
 
 if model_selected == None:
     pass
@@ -216,5 +216,6 @@ if model_selected1 == "Model 6(KNN)":
                     st.text(recommended_movie_names[i])
     if st.button(f'Generate Report ({model_selected1})'):
         html_file_path = "https://fazil6126912.github.io/KNN/"
-
-        webbrowser.open(html_file_path)
+        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
+    # Write the HTML code to the Streamlit app
+        st.write(link_code, unsafe_allow_html=True)
