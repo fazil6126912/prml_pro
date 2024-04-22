@@ -136,6 +136,7 @@ if model_selected == "Model 2(NAIVE BAYES)":
                     st.text(recommended_movie_names[i])
 
     if st.button(f'Generate Report ({model_selected})'):
+        html_file_path = "https://fazil6126912.github.io/NB/"
         javascript_code = f"""
         <script type="text/javascript">
             function openInNewTab() {{
