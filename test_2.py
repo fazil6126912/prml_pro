@@ -136,10 +136,21 @@ if model_selected == "Model 2(NAIVE BAYES)":
                     st.text(recommended_movie_names[i])
 
     if st.button(f'Generate Report ({model_selected})'):
-        html_file_path = "https://fazil6126912.github.io/NB/index.html"
-        link_code = f'<a href="{html_file_path}" target="_blank">Open Web Page</a>'
-    # Write the HTML code to the Streamlit app
-        st.write(link_code, unsafe_allow_html=True)
+        javascript_code = f"""
+        <script type="text/javascript">
+            function openInNewTab() {{
+                var hiddenButton = document.createElement('a');
+                hiddenButton.href = '{html_file_path}';
+                hiddenButton.target = '_blank';
+                hiddenButton.style.display = 'none';
+                document.body.appendChild(hiddenButton);
+                hiddenButton.click();
+            }}
+            openInNewTab();
+        </script>
+        """
+    # Write the JavaScript code to the Streamlit app
+        st.write(javascript_code, unsafe_allow_html=True)
         
 if model_selected == "Model 3(SVM)":
     option = st.selectbox("Type or select an user ID from the dropdown",first_element_knn(movies_knn))
