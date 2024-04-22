@@ -136,8 +136,7 @@ if model_selected == "Model 2(NAIVE BAYES)":
                     st.text(recommended_movie_names[i])
 
     if st.button(f'Generate Report ({model_selected})'):
-        html_file_path = "https://www.youtube.com/"
-        # "https://fazil6126912.github.io/NB/index.html"
+        html_file_path = "https://fazil6126912.github.io/NB/index.html"
 
     # Open HTML file in the default web browser
         # webbrowser.open(html_file_path)
