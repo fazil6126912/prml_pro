@@ -117,11 +117,11 @@ if model_selected == "Model 1(BAG OF WORDS)":
                     st.markdown(image_html, unsafe_allow_html=True)
                     st.text(recommended_movie_names[i])
         
-    # if st.button('Generate Report'):
-    #     html_file_path = "https://fazil6126912.github.io/Bag/"
+    if st.button('Generate Report'):
+        html_file_path = "https://fazil6126912.github.io/Bag/"
 
-    # # Open HTML file in the default web browser
-    #     webbrowser.open(html_file_path)
+    # Open HTML file in the default web browser
+        webbrowser.open(html_file_path)
 
 if model_selected == "Model 2(NAIVE BAYES)":
     option = st.selectbox("Type or select an user ID from the dropdown",first_element_knn(movies_knn))
@@ -136,8 +136,7 @@ if model_selected == "Model 2(NAIVE BAYES)":
                     st.text(recommended_movie_names[i])
 
     if st.button(f'Generate Report ({model_selected})'):
-        html_file_path = "C:/Users/fazil/OneDrive/Desktop/report/NaiveBayes-main/NaiveBayes-main/index.html"
-        # "https://fazil6126912.github.io/NB/"
+        html_file_path = "https://fazil6126912.github.io/NB/index.html"
 
     # Open HTML file in the default web browser
         webbrowser.open(html_file_path)
