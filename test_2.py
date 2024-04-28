@@ -29,25 +29,6 @@ def fetch_poster(tmdbId):
         full_path = "https://image.tmdb.org/t/p/w500/" + poster_path
         return full_path
 
-# Function to recommend movies
-def recommend(movie, similarity, movies):
-    index = movies[movies['Title'] == movie].index[0]
-    distances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
-    recommended_movie_names = []
-    recommended_movie_posters = []
-    tmdbId_list = []
-    flag = 0
-    for i in distances[1:6]:
-        # fetch the movie poster
-        tmdbId = movies.iloc[i[0]].tmdbId
-        poster = fetch_poster(tmdbId)
-        if poster !=  None :
-            flag = flag + 1
-            recommended_movie_posters.append(fetch_poster(tmdbId))
-            recommended_movie_names.append(movies.iloc[i[0]].Title)
-            tmdbId_list.append(tmdbId)
-    return recommended_movie_names, recommended_movie_posters, flag, tmdbId_list
-
 def recommend_b(movies_knn, movie,files):
     movieId = movies_df[movies_df['Title'] == movie].movieId.iloc[0]
     with open(files, 'r') as file:
